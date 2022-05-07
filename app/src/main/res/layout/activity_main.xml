@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:fontFamily="@font/alex_brush"
+        android:text="@string/logo"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="45sp" />
+
+    <EditText
+        android:id="@+id/user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/logo"
+        android:backgroundTint="@color/hint_color"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint_color"
+        android:layout_marginTop="90sp"
+        android:layout_marginHorizontal="60sp"
+        android:inputType="textPersonName"
+        android:hint="@string/hint_user_field" />
+
+    <Button
+        android:id="@+id/main_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_field"
+        android:layout_marginHorizontal="130sp"
+        android:layout_marginTop="20sp"
+        android:backgroundTint="@color/button_color"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/main_btn"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/result_info"
+        android:layout_below="@id/main_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@+id/result_info"
+        android:layout_marginStart="24sp"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/img_4" />
+
+</RelativeLayout>
